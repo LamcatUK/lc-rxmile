@@ -1,0 +1,86 @@
+.btn {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+}
+
+.btn-primary {
+    min-width: 190px;
+    background-color: $pink;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: 1px solid $pink;
+    &:hover,
+    &:focus {
+        background-color: darken($pink, 10%);
+    }
+}
+.btn-outline {
+    min-width: 170px;
+    background-color: #fff;
+    color: $pink;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 1px solid $pink;
+    padding: 1rem 1rem;
+    border-radius: 2rem;
+    &:hover,
+    &:focus {
+        background-color: #fff;
+    }
+}
+
+.btn-navbar {
+    color: #fff;
+    background-color: $blue;
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    border: 1px solid $blue;
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;
+    &:hover,
+    &:focus {
+        background-color: darken($blue, 10%);
+        color: #fff;
+    }
+}
+.btn-navbar--outline {
+    color: $blue;
+    background-color: #fff;
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    border: 1px solid $blue;
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;
+    &:hover,
+    &:focus {
+        background-color: $green;
+        color: $blue;
+    }
+}
+
+
+.btn--small {
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+}
+
+.btn-previous,
+.btn-next {
+    @extend .btn-outline;
+    @extend .btn--small;
+}
+
+
+li.navbar-btn {
+    a {
+        @extend .btn;
+        @extend .btn-primary;
+        min-width: 150px;
+        padding: 0.5rem 1rem;
+    }
+}

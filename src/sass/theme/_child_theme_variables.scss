@@ -1,0 +1,37 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
+// Just copy a variable from src/sass/assets/bootstrap5/_variables.scss, paste it here and edit the value.
+
+
+
+$blue: hsl(222, 89%, 26%);
+$blue-100: hsl(202, 100%, 95%);
+$green: hsl(173, 95%, 39%);
+$green-100: #e6f9f6;
+$pink: #fd2671;
+$pink-100: #ffe8f0;
+$yellow: #fc9537;
+$yellow-100: #fff4eb; 
+
+$grey: #808080;
+
+$white: #fff;
+$black: #000;
+
+$primary: $blue;
+
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1240px
+);
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1180px,
+);

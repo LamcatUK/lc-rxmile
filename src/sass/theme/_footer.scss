@@ -1,0 +1,67 @@
+.footer {
+    background-color: $blue;
+    color: white;
+    font-size: 0.875rem;
+    a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+            color: $blue-100;
+        }
+        font-size: 0.875rem;
+    }
+    img {
+        max-width: 180px;
+    }
+    ul.menu {
+        padding: 0;
+        .menu-item {
+            list-style: none;
+            margin-bottom: 1rem;
+        }
+    }
+    .icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 1rem;
+    }
+    .colophon {
+        font-size: 0.75rem !important;
+        a {
+            font-size: 0.75rem !important;
+        }
+    }
+
+    .social {
+        padding-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            width: 32px;
+            height: 32px;
+            border-radius: 0.5rem;
+            color: white !important;
+            font-family: fontawesome;
+            i {
+                font-style: normal;
+            }
+        }
+        .icon--fb {
+            background-color: #1877F2;
+        }
+        .icon--tw {
+            background-color: #1DA1F2;
+        }
+        .icon--ig {
+            background-color: #F00073;
+        }
+        .icon--li {
+            background-color: $green;
+        }
+    }
+}

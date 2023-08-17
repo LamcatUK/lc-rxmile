@@ -1,0 +1,17 @@
+.text_image {
+    &__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // img {
+        //     max-width: 250px;
+        // }
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
