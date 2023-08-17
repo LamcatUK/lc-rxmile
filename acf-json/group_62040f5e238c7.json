@@ -209,7 +209,7 @@
                     "name": "is_calendly1",
                     "aria-label": "",
                     "type": "checkbox",
-                    "instructions": "",
+                    "instructions": "**Overrides CTA1**",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -221,9 +221,9 @@
                         "Yes": "Yes"
                     },
                     "default_value": [],
-                    "return_format": "",
+                    "return_format": "value",
                     "allow_custom": 0,
-                    "layout": "",
+                    "layout": "vertical",
                     "toggle": 0,
                     "save_custom": 0,
                     "custom_choice_button_text": "Add new choice"
@@ -313,7 +313,7 @@
                     "name": "is_calendly2",
                     "aria-label": "",
                     "type": "checkbox",
-                    "instructions": "",
+                    "instructions": "**Overrides CTA2**",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -373,5 +373,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1692298803
+    "modified": 1692298957
 }
