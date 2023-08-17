@@ -1,5 +1,5 @@
 <?php
-if (get_field('use_featured_image')[0] == 'Yes') {
+if (get_field('use_featured_image') ?? null && get_field('use_featured_image')[0] == 'Yes') {
     $bg = get_the_post_thumbnail_url(get_the_ID(), 'full');
 } else {
     $bg = get_field('background') ?: 'blue';
@@ -12,7 +12,8 @@ if (get_field('use_featured_image')[0] == 'Yes') {
         <div class="row">
             <div class="col-lg-10 offset-lg-1 mb-4">
                 <h1 class="hero__title">
-                    <?=get_field('title')?></h1>
+                    <?=get_field('title')?>
+                </h1>
                 <div class="hero__content">
                     <?=get_field('content')?>
                 </div>
