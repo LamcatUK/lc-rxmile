@@ -13,7 +13,7 @@ $bg = get_field('background');
                 ?>
         <a class="btn btn-<?=get_field('button_type1')?> mx-3 mb-2"
             href=""
-            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/rxmileteam/<?=$path?>'});return false;"><?=$cta['title']?></a>
+            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/rxmile/<?=$path?>'});return false;"><?=$cta['title']?></a>
         <?php
             } else {
                 ?>
@@ -31,7 +31,7 @@ $bg = get_field('background');
                 ?>
         <a class="btn btn-<?=get_field('button_type2')?> mx-3 mb-2"
             href=""
-            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/rxmileteam/<?=$path?>'});return false;"><?=$cta['title']?></a>
+            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/rxmile/<?=$path?>'});return false;"><?=$cta['title']?></a>
         <?php
             } else {
                 ?>

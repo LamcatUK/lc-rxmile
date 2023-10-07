@@ -34,7 +34,7 @@ defined('ABSPATH') || exit;
         gtag('js', new Date());
         gtag('config',
             '<?=get_field('ga_property', 'options')?>'
-            );
+        );
     </script>
     <?php
     }
@@ -57,7 +57,7 @@ defined('ABSPATH') || exit;
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer',
             '<?=get_field('gtm_property', 'options')?>'
-            );
+        );
     </script>
     <!-- End Google Tag Manager -->
     <?php
@@ -123,20 +123,20 @@ defined('ABSPATH') || exit;
                 <?php
             wp_nav_menu(
                 array(
-                                'theme_location'  => 'primary_nav',
-                                'container_class' => 'collapse navbar-collapse',
-                                'container_id'    => 'navbarNavDropdown',
-                                'menu_class'      => 'navbar-nav w-100 justify-content-around align-items-lg-center mt-2 mt-lg-0',
-                                'fallback_cb'     => '',
-                                'menu_id'         => 'main-menu',
-                                'depth'           => 2,
-                                'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
-                                )
+                                                                    'theme_location'  => 'primary_nav',
+                                                                    'container_class' => 'collapse navbar-collapse',
+                                                                    'container_id'    => 'navbarNavDropdown',
+                                                                    'menu_class'      => 'navbar-nav w-100 justify-content-around align-items-lg-center mt-2 mt-lg-0',
+                                                                    'fallback_cb'     => '',
+                                                                    'menu_id'         => 'main-menu',
+                                                                    'depth'           => 2,
+                                                                    'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+                                                                    )
             );
 ?>
                 <div class="d-none d-lg-inline">
                     <a href="#"
-                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/rxmileteam/30min' });return false;"
+                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/rxmile/calling' });return false;"
                         class="btn-navbar--outline me-2">Book Demo</a>
                     <a href="https://tracker.rxmile.com/" class="btn-navbar">Login</a>
                 </div>

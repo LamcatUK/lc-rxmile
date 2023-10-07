@@ -175,7 +175,7 @@
                     "name": "calendly1",
                     "aria-label": "",
                     "type": "text",
-                    "instructions": "everything after https:\/\/calendly.com\/rxmileteam\/",
+                    "instructions": "everything after https:\/\/calendly.com\/rxmile\/",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -279,7 +279,7 @@
                     "name": "calendly2",
                     "aria-label": "",
                     "type": "text",
-                    "instructions": "everything after https:\/\/calendly.com\/rxmileteam\/",
+                    "instructions": "everything after https:\/\/calendly.com\/rxmile\/",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
