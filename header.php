@@ -123,21 +123,29 @@ defined('ABSPATH') || exit;
                 <?php
             wp_nav_menu(
                 array(
-                                                                    'theme_location'  => 'primary_nav',
-                                                                    'container_class' => 'collapse navbar-collapse',
-                                                                    'container_id'    => 'navbarNavDropdown',
-                                                                    'menu_class'      => 'navbar-nav w-100 justify-content-around align-items-lg-center mt-2 mt-lg-0',
-                                                                    'fallback_cb'     => '',
-                                                                    'menu_id'         => 'main-menu',
-                                                                    'depth'           => 2,
-                                                                    'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
-                                                                    )
+                                                                                'theme_location'  => 'primary_nav',
+                                                                                'container_class' => 'collapse navbar-collapse',
+                                                                                'container_id'    => 'navbarNavDropdown',
+                                                                                'menu_class'      => 'navbar-nav w-100 justify-content-around align-items-lg-center mt-2 mt-lg-0',
+                                                                                'fallback_cb'     => '',
+                                                                                'menu_id'         => 'main-menu',
+                                                                                'depth'           => 2,
+                                                                                'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+                                                                                )
             );
 ?>
                 <div class="d-none d-lg-inline">
+                    <?php
+if (get_field('header_button', 'options')) {
+    $l = get_field('header_button', 'options');
+    //https://calendly.com/rxmile/calling
+    ?>
                     <a href="#"
-                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/rxmile/calling' });return false;"
-                        class="btn-navbar--outline me-2">Book Demo</a>
+                        onclick="Calendly.initPopupWidget({url: '<?=$l['url']?>' });return false;"
+                        class="btn-navbar--outline me-2"><?=$l['title']?></a>
+                    <?php
+}
+?>
                     <a href="https://tracker.rxmile.com/" class="btn-navbar">Login</a>
                 </div>
             </div>
