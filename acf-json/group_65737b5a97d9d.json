@@ -1,9 +1,9 @@
 {
-    "key": "group_62056dffde8dc",
+    "key": "group_65737b5a97d9d",
     "title": "LC 2 CTA",
     "fields": [
         {
-            "key": "field_62056fdac73f9",
+            "key": "field_65737b5a9e52d",
             "label": "LC 2 CTA",
             "name": "",
             "aria-label": "",
@@ -21,7 +21,7 @@
             "esc_html": 0
         },
         {
-            "key": "field_620571a220af9",
+            "key": "field_65737b5aa2006",
             "label": "Background",
             "name": "background",
             "aria-label": "",
@@ -49,7 +49,7 @@
             "save_other_choice": 0
         },
         {
-            "key": "field_62056e0ac6643",
+            "key": "field_65737b5aa5c72",
             "label": "CTA 1",
             "name": "cta1",
             "aria-label": "",
@@ -65,7 +65,7 @@
             "return_format": "array"
         },
         {
-            "key": "field_62056e2ec6644",
+            "key": "field_65737b5aa982d",
             "label": "CTA 1 Button Type",
             "name": "button_type1",
             "aria-label": "",
@@ -90,12 +90,12 @@
             "save_other_choice": 0
         },
         {
-            "key": "field_645e8bb91e6f5",
-            "label": "Calendly",
-            "name": "calendly1",
+            "key": "field_65737b5aad51f",
+            "label": "Digivox",
+            "name": "digivox1",
             "aria-label": "",
-            "type": "group",
-            "instructions": "",
+            "type": "radio",
+            "instructions": "If set to anything other than 'No' will override CTA1",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -103,57 +103,20 @@
                 "class": "",
                 "id": ""
             },
-            "layout": "block",
-            "sub_fields": [
-                {
-                    "key": "field_645e8bb91e6f6",
-                    "label": "Is Calendly?",
-                    "name": "is_calendly1",
-                    "aria-label": "",
-                    "type": "checkbox",
-                    "instructions": "**Overrides CTA1**",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "choices": {
-                        "Yes": "Yes"
-                    },
-                    "default_value": [],
-                    "return_format": "value",
-                    "allow_custom": 0,
-                    "layout": "horizontal",
-                    "toggle": 0,
-                    "save_custom": 0,
-                    "custom_choice_button_text": "Add new choice"
-                },
-                {
-                    "key": "field_645e8bb91e6f7",
-                    "label": "Calendly Path",
-                    "name": "calendly1",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "everything after https:\/\/calendly.com\/rxmileteam\/",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": ""
-                }
-            ]
+            "choices": {
+                "No": "No",
+                "Courier (Calendar)": "Courier (Calendar)",
+                "Pharmacy (Form)": "Pharmacy (Form)"
+            },
+            "default_value": "No",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
         },
         {
-            "key": "field_62056e4bc6645",
+            "key": "field_65737b5ab11a0",
             "label": "CTA 2",
             "name": "cta2",
             "aria-label": "",
@@ -169,7 +132,7 @@
             "return_format": "array"
         },
         {
-            "key": "field_62056e53c6646",
+            "key": "field_65737b5ab4e22",
             "label": "CTA 2 Button Type",
             "name": "button_type2",
             "aria-label": "",
@@ -194,12 +157,12 @@
             "save_other_choice": 0
         },
         {
-            "key": "field_645e8b8c4d72c",
-            "label": "Calendly",
-            "name": "calendly2",
+            "key": "field_65737b98e731b",
+            "label": "Digivox",
+            "name": "digivox2",
             "aria-label": "",
-            "type": "group",
-            "instructions": "",
+            "type": "radio",
+            "instructions": "If set to anything other than 'No' will override CTA2",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -207,54 +170,17 @@
                 "class": "",
                 "id": ""
             },
-            "layout": "block",
-            "sub_fields": [
-                {
-                    "key": "field_645e8b8c4d72d",
-                    "label": "Is Calendly?",
-                    "name": "is_calendly2",
-                    "aria-label": "",
-                    "type": "checkbox",
-                    "instructions": "**Overrides CTA2**",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "choices": {
-                        "Yes": "Yes"
-                    },
-                    "default_value": [],
-                    "return_format": "value",
-                    "allow_custom": 0,
-                    "layout": "horizontal",
-                    "toggle": 0,
-                    "save_custom": 0,
-                    "custom_choice_button_text": "Add new choice"
-                },
-                {
-                    "key": "field_645e8b8c4d72e",
-                    "label": "Calendly Path",
-                    "name": "calendly2",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "everything after https:\/\/calendly.com\/rxmileteam\/",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": ""
-                }
-            ]
+            "choices": {
+                "No": "No",
+                "Courier (Calendar)": "Courier (Calendar)",
+                "Pharmacy (Form)": "Pharmacy (Form)"
+            },
+            "default_value": "No",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
         }
     ],
     "location": [
@@ -272,8 +198,8 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": false,
+    "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1702067046
+    "modified": 1702067572
 }
