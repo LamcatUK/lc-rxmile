@@ -12,10 +12,10 @@ $bg = get_field('background');
                 $modalID = random_str(4);
                 if (get_field('digivox1') == 'Courier (Calendar)') {
                     $code = get_field('courier_calendar', 'options');
-                    $modalTitle = 'Courier Calendar';
+                    $modalTitle = get_field('courier_title', 'options');
                 } else {
                     $code = get_field('pharmacy_form', 'options');
-                    $modalTitle = 'Pharmacy Form';
+                    $modalTitle = get_field('pharmacy_title', 'options');
                 }
                 ?>
         <div class="btn btn-<?=get_field('button_type1')?> mb-2"
@@ -49,15 +49,15 @@ $bg = get_field('background');
         }
         if (get_field('cta2')) {
             $cta = get_field('cta2');
-            echo var_dump(get_field('digivox2'));
+            // echo var_dump(get_field('digivox2'));
             if (get_field('digivox2') != 'No') {
                 $modalID = random_str(4);
                 if (get_field('digivox2') == 'Courier (Calendar)') {
                     $code = get_field('courier_calendar', 'options');
-                    $modalTitle = 'Courier Calendar';
+                    $modalTitle = get_field('courier_title', 'options');
                 } else {
                     $code = get_field('pharmacy_form', 'options');
-                    $modalTitle = 'Pharmacy Form';
+                    $modalTitle = get_field('pharmacy_title', 'options');
                 }
                 ?>
         <div class="btn btn-<?=get_field('button_type2')?> mb-2"

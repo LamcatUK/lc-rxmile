@@ -169,6 +169,26 @@
             "maxlength": ""
         },
         {
+            "key": "field_65738b2afe18c",
+            "label": "Courier Calendar Title",
+            "name": "courier_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_6573738d00d8a",
             "label": "Courier Calendar iframe code",
             "name": "courier_calendar",
@@ -187,6 +207,26 @@
             "rows": "",
             "placeholder": "",
             "new_lines": ""
+        },
+        {
+            "key": "field_65738b40fe18d",
+            "label": "Pharmacies Form Title",
+            "name": "pharmacy_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         },
         {
             "key": "field_657373a700d8b",
@@ -227,5 +267,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1702065083
+    "modified": 1702071127
 }
