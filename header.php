@@ -123,26 +123,36 @@ defined('ABSPATH') || exit;
                 <?php
             wp_nav_menu(
                 array(
-                                                                                            'theme_location'  => 'primary_nav',
-                                                                                            'container_class' => 'collapse navbar-collapse',
-                                                                                            'container_id'    => 'navbarNavDropdown',
-                                                                                            'menu_class'      => 'navbar-nav w-100 justify-content-around align-items-lg-center mt-2 mt-lg-0',
-                                                                                            'fallback_cb'     => '',
-                                                                                            'menu_id'         => 'main-menu',
-                                                                                            'depth'           => 2,
-                                                                                            'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
-                                                                                            )
+                                                                                                                                                                    'theme_location'  => 'primary_nav',
+                                                                                                                                                                    'container_class' => 'collapse navbar-collapse',
+                                                                                                                                                                    'container_id'    => 'navbarNavDropdown',
+                                                                                                                                                                    'menu_class'      => 'navbar-nav w-100 justify-content-around align-items-lg-center mt-2 mt-lg-0',
+                                                                                                                                                                    'fallback_cb'     => '',
+                                                                                                                                                                    'menu_id'         => 'main-menu',
+                                                                                                                                                                    'depth'           => 2,
+                                                                                                                                                                    'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+                                                                                                                                                                    )
             );
 ?>
                 <div class="d-none d-lg-inline">
                     <?php
 if (get_field('header_button', 'options')) {
+    /*
     $l = get_field('header_button', 'options');
+    <a href="#"
+        onclick="Calendly.initPopupWidget({url: '<?=$l['url']?>' });return false;"
+        class="btn-navbar--outline me-2"><?=$l['title']?></a>
     //https://calendly.com/rxmile/calling
+    */
+
+    $code = get_field('courier_calendar', 'options');
+    $modalTitle = get_field('courier_title', 'options');
+    $modalID = random_str(4);
     ?>
-                    <a href="#"
-                        onclick="Calendly.initPopupWidget({url: '<?=$l['url']?>' });return false;"
-                        class="btn-navbar--outline me-2"><?=$l['title']?></a>
+                    <span class="btn-navbar--outline me-2" data-bs-toggle="modal"
+                        data-bs-target="#modal<?=$modalID?>">
+                        Book Demo
+                    </span>
                     <?php
 }
 ?>
@@ -150,3 +160,24 @@ if (get_field('header_button', 'options')) {
                 </div>
             </div>
         </nav>
+        <?php
+if (get_field('header_button', 'options')) {
+    ?>
+        <div class="modal fade" id="modal<?=$modalID?>">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title text-primary h2">
+                            <?=$modalTitle?>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <?=$code?>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?php
+}
+?>
