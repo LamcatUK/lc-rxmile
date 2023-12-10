@@ -70,6 +70,32 @@ defined('ABSPATH') || exit;
     }
 ?>
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <!-- Meta Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2614397218698886');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" alt="" style="display:none"
+            src="https://www.facebook.com/tr?id=2614397218698886&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
     <?php wp_head(); ?>
 
     <script type="application/ld+json">
@@ -123,15 +149,15 @@ defined('ABSPATH') || exit;
                 <?php
             wp_nav_menu(
                 array(
-                                                                                                                                                                                'theme_location'  => 'primary_nav',
-                                                                                                                                                                                'container_class' => 'collapse navbar-collapse',
-                                                                                                                                                                                'container_id'    => 'navbarNavDropdown',
-                                                                                                                                                                                'menu_class'      => 'navbar-nav w-100 justify-content-around align-items-lg-center mt-2 mt-lg-0',
-                                                                                                                                                                                'fallback_cb'     => '',
-                                                                                                                                                                                'menu_id'         => 'main-menu',
-                                                                                                                                                                                'depth'           => 2,
-                                                                                                                                                                                'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
-                                                                                                                                                                                )
+                                                                                                                                                                                            'theme_location'  => 'primary_nav',
+                                                                                                                                                                                            'container_class' => 'collapse navbar-collapse',
+                                                                                                                                                                                            'container_id'    => 'navbarNavDropdown',
+                                                                                                                                                                                            'menu_class'      => 'navbar-nav w-100 justify-content-around align-items-lg-center mt-2 mt-lg-0',
+                                                                                                                                                                                            'fallback_cb'     => '',
+                                                                                                                                                                                            'menu_id'         => 'main-menu',
+                                                                                                                                                                                            'depth'           => 2,
+                                                                                                                                                                                            'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+                                                                                                                                                                                            )
             );
 ?>
                 <div class="d-none d-lg-inline">
