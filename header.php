@@ -149,15 +149,15 @@ defined('ABSPATH') || exit;
                 <?php
             wp_nav_menu(
                 array(
-                                                                                                                                                                                            'theme_location'  => 'primary_nav',
-                                                                                                                                                                                            'container_class' => 'collapse navbar-collapse',
-                                                                                                                                                                                            'container_id'    => 'navbarNavDropdown',
-                                                                                                                                                                                            'menu_class'      => 'navbar-nav w-100 justify-content-around align-items-lg-center mt-2 mt-lg-0',
-                                                                                                                                                                                            'fallback_cb'     => '',
-                                                                                                                                                                                            'menu_id'         => 'main-menu',
-                                                                                                                                                                                            'depth'           => 2,
-                                                                                                                                                                                            'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
-                                                                                                                                                                                            )
+'theme_location'  => 'primary_nav',
+'container_class' => 'collapse navbar-collapse',
+'container_id'    => 'navbarNavDropdown',
+'menu_class'      => 'navbar-nav w-100 justify-content-around align-items-lg-center mt-2 mt-lg-0',
+'fallback_cb'     => '',
+'menu_id'         => 'main-menu',
+'depth'           => 2,
+'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+)
             );
 ?>
                 <div class="d-none d-lg-inline">
@@ -171,6 +171,7 @@ if (get_field('header_button', 'options')) {
     //https://calendly.com/rxmile/calling
     */
     /*
+    // digivox
     $code = get_field('courier_calendar', 'options');
     $modalTitle = get_field('courier_title', 'options');
     $modalID = random_str(4);
