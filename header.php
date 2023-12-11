@@ -183,7 +183,7 @@ if (get_field('header_button', 'options')) {
     */
     ?>
                     <a href="https://links.digivox.ai/widget/booking/9Gd5LgYafaUDKxJPj4kH/" target="_blank"
-                        class="btn-navbar--outline me-2"></a>
+                        class="btn-navbar--outline me-2">Book Demo</a>
                     <?php
 }
 ?>
