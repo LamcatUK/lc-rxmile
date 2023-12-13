@@ -1,6 +1,6 @@
 {
     "key": "group_65737d671a09b",
-    "title": "LC Big CTA",
+    "title": "LC Big CTA (Digivox)",
     "fields": [
         {
             "key": "field_65737d67217f4",
@@ -237,8 +237,8 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": true,
+    "active": false,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1702067632
+    "modified": 1702495241
 }
