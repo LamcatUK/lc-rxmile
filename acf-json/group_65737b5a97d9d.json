@@ -1,6 +1,6 @@
 {
     "key": "group_65737b5a97d9d",
-    "title": "LC 2 CTA",
+    "title": "LC 2 CTA (Digivox)",
     "fields": [
         {
             "key": "field_65737b5a9e52d",
@@ -198,8 +198,8 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": true,
+    "active": false,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1702067572
+    "modified": 1702494329
 }
