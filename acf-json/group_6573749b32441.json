@@ -1,6 +1,6 @@
 {
     "key": "group_6573749b32441",
-    "title": "LC Hero",
+    "title": "LC Hero (Digivox)",
     "fields": [
         {
             "key": "field_6573749b3ae3e",
@@ -296,8 +296,8 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": true,
+    "active": false,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1702065455
+    "modified": 1702495598
 }
