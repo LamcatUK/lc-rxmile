@@ -163,13 +163,15 @@ defined('ABSPATH') || exit;
                 <div class="d-none d-lg-inline">
                     <?php
 if (get_field('header_button', 'options')) {
-    /*
+
     $l = get_field('header_button', 'options');
-    <a href="#"
-        onclick="Calendly.initPopupWidget({url: '<?=$l['url']?>' });return false;"
-        class="btn-navbar--outline me-2"><?=$l['title']?></a>
+    ?>
+                    <a href="#"
+                        onclick="Calendly.initPopupWidget({url: '<?=$l['url']?>' });return false;"
+                        class="btn-navbar--outline me-2"><?=$l['title']?></a>
+                    <?php
     //https://calendly.com/rxmile/calling
-    */
+
     /*
     // digivox
     $code = get_field('courier_calendar', 'options');
@@ -180,11 +182,12 @@ if (get_field('header_button', 'options')) {
         data-bs-target="#modal<?=$modalID?>">
         Book Demo
     </span>
-    */
+
     ?>
                     <a href="https://links.digivox.ai/widget/booking/9Gd5LgYafaUDKxJPj4kH/" target="_blank"
                         class="btn-navbar--outline me-2">Book Demo</a>
                     <?php
+                */
 }
 ?>
                     <a href="https://tracker.rxmile.com/" class="btn-navbar">Login</a>

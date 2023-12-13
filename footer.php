@@ -58,7 +58,7 @@ defined('ABSPATH') || exit;
 </div><!-- #page -->
 <script src="//code.tidio.co/omplptyg4akvt0tcpb9lkuprv9qr6jqc.js"></script>
 <!-- <script src="https://links.digivox.ai/js/form_embed.js"></script> -->
-<!-- <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script> -->
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 <!-- <div class="enquire-button">Enquire</div> -->
 <?php wp_footer();
 if (get_field('gtm_property', 'options')) {
