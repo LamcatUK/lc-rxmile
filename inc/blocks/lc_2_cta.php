@@ -7,37 +7,13 @@ $bg = get_field('background');
         <?php
         if (get_field('cta1')) {
             $cta = get_field('cta1');
-            // echo var_dump(get_field('digivox1'));
-            if (get_field('digivox1') != 'No') {
-                $modalID = random_str(4);
-                if (get_field('digivox1') == 'Courier (Calendar)') {
-                    $code = get_field('courier_calendar', 'options');
-                    $modalTitle = get_field('courier_title', 'options');
-                } else {
-                    $code = get_field('pharmacy_form', 'options');
-                    $modalTitle = get_field('pharmacy_title', 'options');
-                }
+            $calendly1 = get_field('calendly1');
+            if ($calendly1['is_calendly1'] ?? null) {
+                $path = $calendly1['calendly1'] ?: '';
                 ?>
-        <div class="btn btn-<?=get_field('button_type1')?> mb-2"
-            data-bs-toggle="modal"
-            data-bs-target="#modal<?=$modalID?>">
-            <?=$cta['title']?>
-        </div>
-        <div class="modal fade" id="modal<?=$modalID?>">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <div class="modal-title h2">
-                            <?=$modalTitle?>
-                        </div>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body">
-                        <?=$code?>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <a class="btn btn-<?=get_field('button_type1')?> mx-3 mb-2"
+            href=""
+            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/<?=$path?>'});return false;"><?=$cta['title']?></a>
         <?php
             } else {
                 ?>
@@ -49,39 +25,14 @@ $bg = get_field('background');
         }
         if (get_field('cta2')) {
             $cta = get_field('cta2');
-            // echo var_dump(get_field('digivox2'));
-            if (get_field('digivox2') != 'No') {
-                $modalID = random_str(4);
-                if (get_field('digivox2') == 'Courier (Calendar)') {
-                    $code = get_field('courier_calendar', 'options');
-                    $modalTitle = get_field('courier_title', 'options');
-                } else {
-                    $code = get_field('pharmacy_form', 'options');
-                    $modalTitle = get_field('pharmacy_title', 'options');
-                }
+            $calendly2 = get_field('calendly2');
+            if ($calendly2['is_calendly2'] ?? null) {
+                $path = $calendly2['calendly2'] ?: '';
                 ?>
-        <div class="btn btn-<?=get_field('button_type2')?> mb-2"
-            data-bs-toggle="modal"
-            data-bs-target="#modal<?=$modalID?>">
-            <?=$cta['title']?>
-        </div>
-        <div class="modal fade" id="modal<?=$modalID?>">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <div class="modal-title h2">
-                            <?=$modalTitle?>
-                        </div>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body">
-                        <?=$code?>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <a class="btn btn-<?=get_field('button_type2')?> mx-3 mb-2"
+            href=""
+            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/<?=$path?>'});return false;"><?=$cta['title']?></a>
         <?php
-
             } else {
                 ?>
         <a class="btn btn-<?=get_field('button_type2')?> mx-3 mb-2"
