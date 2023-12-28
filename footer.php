@@ -56,6 +56,36 @@ defined('ABSPATH') || exit;
     </div>
 </div>
 </div><!-- #page -->
+
+<div class="modal fade" id="choiceModal" tabindex="-1" role="dialog" aria-labelledby="choiceModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" style="max-width:min(600px,90vw)" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row two_cards g-4">
+                    <div class="col-md-6">
+                        <div class="two_cards__card text-center" type="button"
+                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/rxmile/pharmacy-demo?month=<?=date('YYYY')?>-<?=date('m')?>'});return false;">
+                            <div class="h3">For Pharmacies</div>
+                            <div class="mb-4">Schedule your pharmacy delivery software demo here.</div>
+                            <div class="btn btn-primary btn--small mb-2">Book Demo</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="two_cards__card text-center" type="button"
+                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/francis_uy/start-your-medical-courier-business-today?month=<?=date('YYYY')?>-<?=date('m')?>' });return false;">
+                            <div class="h3">For Couriers</div>
+                            <div class="mb-4">Schedule a demo to join our courier network here.</div>
+                            <div class="btn btn-navbar mb-2 fw-bold" style="min-width:190px">Book Demo</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <script src="//code.tidio.co/omplptyg4akvt0tcpb9lkuprv9qr6jqc.js"></script>
 <!-- <script src="https://links.digivox.ai/js/form_embed.js"></script> -->
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>

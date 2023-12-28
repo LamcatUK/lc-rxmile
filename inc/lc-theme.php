@@ -620,7 +620,8 @@ add_filter('wp_nav_menu_items', 'add_admin_link', 10, 2);
 function add_admin_link($items, $args)
 {
     if($args->theme_location == 'primary_nav') {
-        $items .= '<li class-"pt-3"><a href="#" onclick="Calendly.initPopupWidget({url:\'https://calendly.com/francis_uy/start-your-medical-courier-business-today\'});return false;" class="d-lg-none btn-navbar--outline d-block text-center me-2">Book Demo</a></li>';
+        $items .= '<li class="pt-3 d-lg-none"><span type="button" class="d-block text-center btn-navbar--outline me-2" data-bs-toggle="modal" data-bs-target="#choiceModal">Book Demo</span></li>';
+        // $items .= '<li class-"pt-3"><a href="#" onclick="Calendly.initPopupWidget({url:\'https://calendly.com/francis_uy/start-your-medical-courier-business-today\'});return false;" class="d-lg-none btn-navbar--outline d-block text-center me-2">Book Demo</a></li>';
     }
     return $items;
 }

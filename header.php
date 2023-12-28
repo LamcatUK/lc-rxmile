@@ -166,9 +166,10 @@ if (get_field('header_button', 'options')) {
 
     $l = get_field('header_button', 'options');
     ?>
-                    <a href="#"
-                        onclick="Calendly.initPopupWidget({url: '<?=$l['url']?>' });return false;"
-                        class="btn-navbar--outline me-2"><?=$l['title']?></a>
+                    <span type="button" class="btn-navbar--outline me-2" data-bs-toggle="modal"
+                        data-bs-target="#choiceModal">
+                        Book Demo
+                    </span>
                     <?php
 }
 ?>
