@@ -170,50 +170,9 @@ if (get_field('header_button', 'options')) {
                         onclick="Calendly.initPopupWidget({url: '<?=$l['url']?>' });return false;"
                         class="btn-navbar--outline me-2"><?=$l['title']?></a>
                     <?php
-    //https://calendly.com/rxmile/calling
-
-    /*
-    // digivox
-    $code = get_field('courier_calendar', 'options');
-    $modalTitle = get_field('courier_title', 'options');
-    $modalID = random_str(4);
-
-    <span class="btn-navbar--outline me-2" data-bs-toggle="modal"
-        data-bs-target="#modal<?=$modalID?>">
-        Book Demo
-    </span>
-
-    ?>
-                    <a href="https://links.digivox.ai/widget/booking/9Gd5LgYafaUDKxJPj4kH/" target="_blank"
-                        class="btn-navbar--outline me-2">Book Demo</a>
-                    <?php
-                */
 }
 ?>
                     <a href="https://tracker.rxmile.com/" class="btn-navbar">Login</a>
                 </div>
             </div>
         </nav>
-        <?php
-/*
-if (get_field('header_button', 'options')) {
-    ?>
-        <div class="modal fade" id="modal<?=$modalID?>">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <div class="modal-title text-primary h2">
-                            <?=$modalTitle?>
-                        </div>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body">
-                        <?=$code?>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <?php
-}
-*/
-?>

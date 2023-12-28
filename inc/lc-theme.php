@@ -3,14 +3,14 @@
 
 //Remove from +New Post in Admin Bar
 // add_action( 'admin_bar_menu', 'remove_default_post_type_menu_bar', 999 );
- 
+
 // function remove_default_post_type_menu_bar( $wp_admin_bar ) {
 //     $wp_admin_bar->remove_node( 'new-post' );
 // }
- 
+
 // //Remove from the Side Menu
 // add_action( 'admin_menu', 'remove_default_post_type' );
- 
+
 // function remove_default_post_type() {
 //     remove_menu_page( 'edit.php' );
 // }
@@ -380,14 +380,15 @@ function testimonials_slider()
             $q->the_post();
             global $post;
             $slug = $post->post_name;
-            $img = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'full' );
+            $img = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), 'full');
             ?>
 <div class="testimonial">
     <div class="testimonial__card">
         <a href="/testimonials/#<?=$slug?>">
-            <div class="testimonial__image"><img
-                    src="<?=$img[0]?>" width=<?=$img[1]?> height=<?=$img[2]?>
-                    class="img-fluid"></div>
+            <div class="testimonial__image"><img src="<?=$img[0]?>"
+                    width=<?=$img[1]?>
+                height=<?=$img[2]?>
+                class="img-fluid"></div>
             <h4 class="testimonial__title"><?=get_the_title()?></h4>
             <div class="testimonial__role pb-3">
                 <?=get_field('title', get_the_ID())?>
@@ -613,4 +614,15 @@ function pluralise($quantity, $singular, $plural=null)
             return $singular.'s';
     }
 }
+
+// append demo and login buttons to mobile menu
+add_filter('wp_nav_menu_items', 'add_admin_link', 10, 2);
+function add_admin_link($items, $args)
+{
+    if($args->theme_location == 'primary_nav') {
+        $items .= '<li class-"pt-3"><a href="#" onclick="Calendly.initPopupWidget({url:\'https://calendly.com/francis_uy/start-your-medical-courier-business-today\'});return false;" class="d-lg-none btn-navbar--outline d-block text-center me-2">Book Demo</a></li>';
+    }
+    return $items;
+}
+
 ?>
