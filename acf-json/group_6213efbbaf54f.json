@@ -81,7 +81,7 @@
             "label": "Form ID",
             "name": "form_id",
             "aria-label": "",
-            "type": "number",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -93,11 +93,8 @@
             "default_value": "",
             "placeholder": "",
             "prepend": "",
-            "append": "",
-            "min": "",
-            "max": "",
-            "step": ""
-        }
+            "append": ""
+        }        
     ],
     "location": [
         [
