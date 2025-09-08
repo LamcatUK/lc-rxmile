@@ -4,26 +4,25 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package Understrap
+ * @package lc-rxmile
  */
 
-// Exit if accessed directly.
-defined('ABSPATH') || exit;
+defined( 'ABSPATH' ) || exit;
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
 <head>
     <meta
-        charset="<?php bloginfo('charset'); ?>">
+        charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <?php
-    if (get_field('ga_property', 'options')) {
+    if ( get_field( 'ga_property', 'options' ) ) {
         ?>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async
-        src="https://www.googletagmanager.com/gtag/js?id=<?=get_field('ga_property', 'options')?>">
+        src="https://www.googletagmanager.com/gtag/js?id=<?= esc_attr( get_field( 'ga_property', 'options' ) ); ?>">
     </script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -33,12 +32,12 @@ defined('ABSPATH') || exit;
         }
         gtag('js', new Date());
         gtag('config',
-            '<?=get_field('ga_property', 'options')?>'
+            '<?= esc_attr( get_field( 'ga_property', 'options' ) ); ?>'
         );
     </script>
-    <?php
+        <?php
     }
-    if (get_field('gtm_property', 'options')) {
+    if ( get_field( 'gtm_property', 'options' ) ) {
         ?>
     <!-- Google Tag Manager -->
     <script>
@@ -56,19 +55,19 @@ defined('ABSPATH') || exit;
                 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer',
-            '<?=get_field('gtm_property', 'options')?>'
+            '<?= esc_attr( get_field( 'gtm_property', 'options' ) ); ?>'
         );
     </script>
     <!-- End Google Tag Manager -->
-    <?php
+        <?php
     }
-    if (get_field('google_site_verification', 'options')) {
-        echo '<meta name="google-site-verification" content="' . get_field('google_site_verification', 'options') . '" />';
+    if ( get_field( 'google_site_verification', 'options' ) ) {
+        echo '<meta name="google-site-verification" content="' . esc_attr( get_field( 'google_site_verification', 'options' ) ) . '" />';
     }
-    if (get_field('bing_site_verification', 'options')) {
-        echo '<meta name="msvalidate.01" content="' . get_field('bing_site_verification', 'options') . '" />';
+    if ( get_field( 'bing_site_verification', 'options' ) ) {
+        echo '<meta name="msvalidate.01" content="' . esc_attr( get_field( 'bing_site_verification', 'options' ) ) . '" />';
     }
-?>
+    ?>
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <!-- Meta Pixel Code -->
     <script>
@@ -137,43 +136,51 @@ defined('ABSPATH') || exit;
 
 <body <?php body_class(); ?>
     <?php understrap_body_attributes(); ?>>
-    <?php do_action('wp_body_open'); ?>
-    <div class="site" id="page">
-        <nav id="main-nav" class="fixed-top navbar navbar-expand-lg d-block px-0 py-3" aria-labelledby="main-nav-label">
-            <div class="container-xl d-flex justify-content-between">
-                <a href="/" class="navbar-brand" rel="home"></a>
+    <?php do_action( 'wp_body_open' ); ?>
+<header id="wrapper-navbar" class="fixed-top p-0">
+	<nav class="navbar navbar-expand-lg">
+		<div class="container gap-4">
+            <div class="d-flex justify-content-between w-100 w-lg-auto align-items-center py-3 py-lg-0">
+                <div class="logo-container"><a href="/" class="logo navbar-brand" aria-label="RxMile Homepage"></a></div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="<?php esc_attr_e('Toggle navigation', 'understrap'); ?>"><i
-                        class="fa fa-navicon"></i></button>
-                <?php
-            wp_nav_menu(
-                array(
-'theme_location'  => 'primary_nav',
-'container_class' => 'collapse navbar-collapse',
-'container_id'    => 'navbarNavDropdown',
-'menu_class'      => 'navbar-nav w-100 justify-content-around align-items-lg-center mt-2 mt-lg-0',
-'fallback_cb'     => '',
-'menu_id'         => 'main-menu',
-'depth'           => 2,
-'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
-)
-            );
-?>
-                <div class="d-none d-lg-inline">
+                    data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <div class="w-100 d-flex flex-column justify-content-lg-end align-items-lg-center">
+                    <!-- Contact Details (Hidden on Mobile) -->
+                    <div class="contact-info d-none d-lg-flex gap-3 w-100 justify-content-end align-items-center pb-2">
+                        <?php
+                        if ( get_field( 'header_button', 'options' ) ) {
+                            $l = get_field( 'header_button', 'options' );
+                            ?>
+                        <span type="button" class="e-2" data-bs-toggle="modal"
+                            data-bs-target="#choiceModal">
+                            Book Demo
+                        </span>
+                            <?php
+                        }
+                        ?>
+                        <a href="https://tracker.rxmile.com/" class="">Login</a>
+                    </div>
+                    <!-- Navigation -->
                     <?php
-if (get_field('header_button', 'options')) {
-
-    $l = get_field('header_button', 'options');
-    ?>
-                    <span type="button" class="btn-navbar--outline me-2" data-bs-toggle="modal"
-                        data-bs-target="#choiceModal">
-                        Book Demo
-                    </span>
-                    <?php
-}
-?>
-                    <a href="https://tracker.rxmile.com/" class="btn-navbar">Login</a>
+                    wp_nav_menu(
+                        array(
+                            'theme_location' => 'primary_nav',
+                            'container'      => false,
+                            'menu_class'     => 'navbar-nav w-100 justify-content-end gap-5',
+                            'fallback_cb'    => '',
+                            'depth'          => 3,
+                            'walker'         => new Understrap_WP_Bootstrap_Navwalker(),
+                        )
+                    );
+                    ?>
                 </div>
             </div>
-        </nav>
+		</div>
+	</nav>
+</header>
+<div class="site" id="page">

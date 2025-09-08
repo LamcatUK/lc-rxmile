@@ -13929,29 +13929,77 @@ li.navbar-btn a {
   padding: 0.5rem 1rem;
 }
 
-#main-nav {
+header {
   background-color: white;
 }
-#main-nav .navbar-brand {
-  background-image: url(../img/rxmile-logo--blue.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top left;
-  height: 50px;
-  min-width: 180px;
-  margin-right: 0;
+header .navbar-toggler i {
+  color: #fd2671;
 }
-#main-nav .navbar-nav a {
-  font-weight: 500;
-  font-size: 0.875rem;
+header .navbar-nav {
+  margin-block: 0;
+}
+header a,
+header a.nav-link {
+  color: hsl(222, 89%, 26%);
+  display: inline-block;
+  text-decoration: none;
+  padding: 0;
+  transition: color 0.3s ease;
 }
 @media (min-width: 992px) {
-  #main-nav {
-    background-color: transparent;
+  header a:hover,
+  header a.nav-link:hover {
+    color: #fd2671;
+    text-decoration: none;
   }
 }
-#main-nav .navbar-toggler {
+header a:focus,
+header a.nav-link:focus {
   color: #fd2671;
+  text-decoration: none;
+}
+header .logo-container {
+  max-width: 180px;
+  margin-right: 1rem;
+}
+header .logo {
+  background-image: url(../img/rxmile-logo--blue.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  aspect-ratio: 180/50;
+  width: 180px;
+  height: 50px;
+  max-width: 100%;
+}
+header .current_page_item > .nav-link,
+header .current_page_parent > .nav-link,
+header .dropdown.current-page-ancestor > .nav-link,
+header .dropdown.current-menu-item > .nav-link {
+  color: #fd2671;
+}
+@media (max-width: 991px) {
+  header .navbar-collapse {
+    background: var(--col-neutral-900);
+    min-height: 100svh;
+    /* Do not set display:flex or height, let Bootstrap animate */
+  }
+  header .navbar-nav {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+  header .nav-link,
+  header .navbar-nav .nav-link {
+    font-size: 1rem;
+    padding: 1rem 0;
+  }
+  header .dropdown-item {
+    font-size: 1rem;
+  }
+  header .fs-subtle a {
+    font-size: 0.875rem;
+  }
 }
 
 .footer {

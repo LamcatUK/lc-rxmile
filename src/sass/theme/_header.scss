@@ -1,24 +1,79 @@
-#main-nav {
-    .navbar-brand {
-        background-image: url(../img/rxmile-logo--blue.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: top left;
-        height: 50px;
-        min-width: 180px;
-        margin-right: 0;
+header {
+  background-color: white;
+
+  .navbar-toggler {
+    i {
+      color: $pink;
+    }
+  }
+
+  .navbar-nav {
+    margin-block: 0;
+  }
+
+  a,
+  a.nav-link {
+    color: $blue;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0;
+    transition: color 0.3s ease;
+    @media (min-width: 992px) {
+      &:hover {
+        color: $pink;
+        text-decoration: none;
+      }
+    }
+    &:focus {
+      color: $pink;
+      text-decoration: none;
+    }
+  }
+
+  .logo-container {
+    max-width: 180px;
+    margin-right: 1rem;
+  }
+  .logo {
+    background-image: url(../img/rxmile-logo--blue.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    aspect-ratio: 180 / 50;
+    width: 180px;
+    height: 50px;
+    max-width: 100%;
+  }
+
+  .current_page_item > .nav-link,
+  .current_page_parent > .nav-link,
+  .dropdown.current-page-ancestor > .nav-link,
+  .dropdown.current-menu-item > .nav-link {
+    color: $pink;
+  }
+
+  @media (max-width: 991px) {
+    .navbar-collapse {
+      background: var(--col-neutral-900);
+      min-height: 100svh;
+      /* Do not set display:flex or height, let Bootstrap animate */
     }
     .navbar-nav {
-        a {
-            font-weight: 500;
-            font-size: 0.875rem;
-        }
+      width: 100%;
+      padding-bottom: 2rem;
     }
-    background-color: white;
-    @media (min-width:992px) {
-        background-color: transparent;
+    .nav-link,
+    .navbar-nav .nav-link {
+      font-size: 1rem;
+      padding: 1rem 0;
     }
-    .navbar-toggler {
-        color: $pink;
+    .dropdown-item {
+      font-size: 1rem;
     }
+
+    .fs-subtle a {
+      font-size: 0.875rem;
+    }
+  }
 }
