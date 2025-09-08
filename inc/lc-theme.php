@@ -98,6 +98,17 @@ function acf_blocks()
             'supports' => array('mode' => false),
         ));
         acf_register_block(array(
+            'name'				=> 'lc_integration_partners',
+            'title'				=> __('LC Integration Partners'),
+            'description'		=> __(''),
+            'render_template'	=> 'inc/blocks/lc_integration_partners.php',
+            'category'			=> 'layout',
+            'icon'				=> 'excerpt-view',
+            'keywords'			=> array( 'integration', 'partners' ),
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
+        acf_register_block(array(
             'name'				=> 'lc_2_cta',
             'title'				=> __('LC 2 CTA'),
             'description'		=> __(''),
