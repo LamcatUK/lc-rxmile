@@ -1,23 +1,33 @@
+<?php
+/**
+ * Block Name: Stat Spinner
+ * This is the template that displays the Stat Spinner block.
+ *
+ * @package lc-rxmile
+ */
+
+defined( 'ABSPATH' ) || exit;
+?>
 <section class="stat_spinner py-5">
     <div class="container">
         <div class="stats">
             <?php
-            while (have_rows('stats')) {
+            while ( have_rows( 'stats', 'option' ) ) {
                 the_row();
-            ?>
+                ?>
             <div class="stat">
                 <div class="stat__inner">
                     <?php
-                    $endval = get_sub_field('stat');
-                    $endval = preg_replace('/,/', '.', $endval);
-                    $decimals = strlen(substr(strrchr($endval, "."), 1));
+                    $endval   = get_sub_field( 'stat' );
+                    $endval   = preg_replace( '/,/', '.', $endval );
+                    $decimals = strlen( substr( strrchr( $endval, '.' ), 1 ) );
                     ?>
                     <div class="stat__value">
-                        <div class="stat__qualifier"><?=get_sub_field('stat_prefix')?></div>
-                        <?=do_shortcode("[countup start='0' end='{$endval}' decimals='{$decimals}' duration='3' scroll='true']")?>
-                        <div class="stat__qualifier"><?=get_sub_field('stat_suffix')?></div>
+                        <div class="stat__qualifier"><?= esc_html( get_sub_field( 'stat_prefix' ) ); ?></div>
+                        <?= do_shortcode( "[countup start='0' end='{$endval}' decimals='{$decimals}' duration='3' scroll='true']" ); ?>
+                        <div class="stat__qualifier"><?= esc_html( get_sub_field( 'stat_suffix' ) ); ?></div>
                     </div>
-                    <div class="stat__title"><?=get_sub_field('stat_title')?></div>
+                    <div class="stat__title"><?= esc_html( get_sub_field( 'stat_title' ) ); ?></div>
                 </div>
             </div>
                 <?php
@@ -27,9 +37,11 @@
     </div>
 </section>
 <?php
-add_action('wp_footer', function () {
-    ?>
-<script src="<?=get_stylesheet_directory_uri()?>/js/slick.min.js"></script>
+add_action(
+    'wp_footer',
+    function () {
+        ?>
+<script src="<?= esc_url( get_stylesheet_directory_uri() . '/js/slick.min.js' ); ?>"></script>
 <script type="text/javascript">
 (function($){
     $('.stats').slick({
@@ -66,5 +78,7 @@ add_action('wp_footer', function () {
     });
 })(jQuery);
 </script>
-<?php
-}, 9999);
+        <?php
+    },
+    9999
+);
