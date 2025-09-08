@@ -14072,6 +14072,15 @@ li.navbar-btn a {
 .three_cards li {
   font-size: 0.875rem;
 }
+.three_cards a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.three_cards a:hover {
+  color: hsl(222, 89%, 26%);
+  text-decoration: underline;
+}
 
 .four_cards .row {
   max-width: 2000px;

@@ -170,7 +170,7 @@ sup {
 }
 
 a {
-  color: #072b7d;
+  color: hsl(222, 89%, 26%);
   text-decoration: underline;
 }
 a:hover {
@@ -388,10 +388,6 @@ legend + * {
   padding: 0;
 }
 
-::-webkit-file-upload-button {
-  font: inherit;
-}
-
 ::file-selector-button {
   font: inherit;
 }
@@ -423,14 +419,14 @@ progress {
 }
 
 :root {
-  --bs-blue: #072b7d;
+  --bs-blue: hsl(222, 89%, 26%);
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #fd2671;
   --bs-red: #dc3545;
   --bs-orange: #fd7e14;
   --bs-yellow: #fc9537;
-  --bs-green: #05c2ac;
+  --bs-green: hsl(173, 95%, 39%);
   --bs-teal: #20c997;
   --bs-cyan: #0dcaf0;
   --bs-white: #fff;
@@ -445,9 +441,9 @@ progress {
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #072b7d;
+  --bs-primary: hsl(222, 89%, 26%);
   --bs-secondary: #6c757d;
-  --bs-success: #05c2ac;
+  --bs-success: hsl(173, 95%, 39%);
   --bs-info: #0dcaf0;
   --bs-warning: #fc9537;
   --bs-danger: #dc3545;
@@ -807,12 +803,12 @@ progress {
 
 .has-blue-color,
 .has-blue-color:visited {
-  color: #072b7d;
+  color: hsl(222, 89%, 26%);
 }
 
 .has-blue-background-color {
-  background-color: #072b7d;
-  border-color: #072b7d;
+  background-color: hsl(222, 89%, 26%);
+  border-color: hsl(222, 89%, 26%);
 }
 
 .has-indigo-color,
@@ -877,12 +873,12 @@ progress {
 
 .has-green-color,
 .has-green-color:visited {
-  color: #05c2ac;
+  color: hsl(173, 95%, 39%);
 }
 
 .has-green-background-color {
-  background-color: #05c2ac;
-  border-color: #05c2ac;
+  background-color: hsl(173, 95%, 39%);
+  border-color: hsl(173, 95%, 39%);
 }
 
 .has-teal-color,
@@ -937,12 +933,12 @@ progress {
 
 .has-primary-color,
 .has-primary-color:visited {
-  color: #072b7d;
+  color: hsl(222, 89%, 26%);
 }
 
 .has-primary-background-color {
-  background-color: #072b7d;
-  border-color: #072b7d;
+  background-color: hsl(222, 89%, 26%);
+  border-color: hsl(222, 89%, 26%);
 }
 
 .has-secondary-color,
@@ -957,12 +953,12 @@ progress {
 
 .has-success-color,
 .has-success-color:visited {
-  color: #05c2ac;
+  color: hsl(173, 95%, 39%);
 }
 
 .has-success-background-color {
-  background-color: #05c2ac;
-  border-color: #05c2ac;
+  background-color: hsl(173, 95%, 39%);
+  border-color: hsl(173, 95%, 39%);
 }
 
 .has-info-color,
@@ -1041,33 +1037,33 @@ body.understrap-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-cont
 }
 @media (min-width: 576px) {
   body.understrap-no-sidebar .alignwide .wp-block-cover__inner-container,
-body.understrap-no-sidebar .alignfull .wp-block-cover__inner-container,
-body.understrap-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container,
-body.understrap-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-container {
+  body.understrap-no-sidebar .alignfull .wp-block-cover__inner-container,
+  body.understrap-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container,
+  body.understrap-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-container {
     max-width: 540px;
   }
 }
 @media (min-width: 768px) {
   body.understrap-no-sidebar .alignwide .wp-block-cover__inner-container,
-body.understrap-no-sidebar .alignfull .wp-block-cover__inner-container,
-body.understrap-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container,
-body.understrap-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-container {
+  body.understrap-no-sidebar .alignfull .wp-block-cover__inner-container,
+  body.understrap-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container,
+  body.understrap-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-container {
     max-width: 720px;
   }
 }
 @media (min-width: 992px) {
   body.understrap-no-sidebar .alignwide .wp-block-cover__inner-container,
-body.understrap-no-sidebar .alignfull .wp-block-cover__inner-container,
-body.understrap-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container,
-body.understrap-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-container {
+  body.understrap-no-sidebar .alignfull .wp-block-cover__inner-container,
+  body.understrap-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container,
+  body.understrap-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-container {
     max-width: 960px;
   }
 }
 @media (min-width: 1240px) {
   body.understrap-no-sidebar .alignwide .wp-block-cover__inner-container,
-body.understrap-no-sidebar .alignfull .wp-block-cover__inner-container,
-body.understrap-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container,
-body.understrap-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-container {
+  body.understrap-no-sidebar .alignfull .wp-block-cover__inner-container,
+  body.understrap-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container,
+  body.understrap-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-container {
     max-width: 1180px;
   }
 }
@@ -1087,31 +1083,31 @@ body.understrap-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-cont
 }
 @media (min-width: 576px) {
   body.understrap-no-sidebar .alignwide .wp-block-cover__inner-container,
-body.understrap-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container {
+  body.understrap-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container {
     max-width: 540px;
   }
 }
 @media (min-width: 768px) {
   body.understrap-no-sidebar .alignwide .wp-block-cover__inner-container,
-body.understrap-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container {
+  body.understrap-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container {
     max-width: 720px;
   }
 }
 @media (min-width: 992px) {
   body.understrap-no-sidebar .alignwide .wp-block-cover__inner-container,
-body.understrap-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container {
+  body.understrap-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container {
     max-width: 960px;
   }
 }
 @media (min-width: 1240px) {
   body.understrap-no-sidebar .alignwide .wp-block-cover__inner-container,
-body.understrap-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container {
+  body.understrap-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container {
     max-width: 1180px;
   }
 }
 @media (max-width: 920px) {
   body.understrap-no-sidebar .alignwide,
-body.understrap-no-sidebar .wp-block-cover.alignwide {
+  body.understrap-no-sidebar .wp-block-cover.alignwide {
     margin: 0px calc(50% - 48vw);
     max-width: 96vw;
     width: 100vw;
