@@ -70,8 +70,11 @@ if (get_field('show_hippa_badge') == 'Left') {
 if (get_field('show_hippa_badge') != 'No') {
     ?>
             <div class="col-12">
-                <div class="hippa-badge <?=$hippa_class?>"
+                <div class="d-inline-block hippa-badge <?=$hippa_class?>"
                     style="background-image:url(<?=get_stylesheet_directory_uri()?>/img/hippa-compliant.png)">
+                </div>
+                <div class="d-inline-block hippa-badge <?=$hippa_class?>"
+                    style="background-image:url(<?=get_stylesheet_directory_uri()?>/img/ncpa-logo.png)">
                 </div>
             </div>
             <?php
