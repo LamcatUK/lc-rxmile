@@ -159,7 +159,7 @@ function acf_blocks()
             'name'                => 'lc_hero',
             'title'                => __('LC Hero'),
             'description'        => __(''),
-            'render_template'    => 'blocks/lc_hero.php',
+            'render_template'    => 'blocks/lc-hero.php',
             'category'            => 'layout',
             'icon'                => 'excerpt-view',
             'keywords'            => array( 'image', 'hero' ),
