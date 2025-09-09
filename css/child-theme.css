@@ -14722,19 +14722,22 @@ header .dropdown.current-menu-item > .nav-link {
 .latest__image,
 .insight__image,
 .recent__image {
-  aspect-ratio: 2/1;
+  aspect-ratio: 16/9;
   width: 100%;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .latest__image img,
 .insight__image img,
 .recent__image img {
   aspect-ratio: 2/1;
   width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+  -o-object-fit: contain;
+  object-fit: contain;
   -o-object-position: center;
   object-position: center;
 }
