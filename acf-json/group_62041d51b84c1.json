@@ -124,6 +124,32 @@
             "custom_choice_button_text": "Add new choice"
         },
         {
+            "key": "field_68c06335eb8db",
+            "label": "Level",
+            "name": "level",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "h1": "h1",
+                "h2": "h2"
+            },
+            "default_value": "h2",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "allow_in_bindings": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        },
+        {
             "key": "field_62041d63f7dff",
             "label": "Title",
             "name": "title",
@@ -133,15 +159,16 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "80",
+                "width": "60",
                 "class": "",
                 "id": ""
             },
             "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 1,
             "placeholder": "",
             "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "append": ""
         },
         {
             "key": "field_62041d80f7e01",
@@ -268,5 +295,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1692298629
+    "modified": 1757438806
 }
