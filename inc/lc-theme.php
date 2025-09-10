@@ -388,4 +388,11 @@ function add_admin_link($items, $args)
     return $items;
 }
 
+function ymd_to_display( $ymd ) {
+    if ( ! $ymd ) {
+        return '';
+    }
+    return gmdate( 'jS F, Y', strtotime( $ymd ) );
+}
+
 ?>

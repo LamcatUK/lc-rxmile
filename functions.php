@@ -12,6 +12,7 @@ define('LC_THEME_DIR', WP_CONTENT_DIR . '/themes/lc-rxmile');
 
 // require_once LC_THEME_DIR . '/inc/lc-performance.php';
 // require_once LC_THEME_DIR . '/inc/lc-utility.php';
+require_once LC_THEME_DIR . '/inc/lc-posttypes.php';
 require_once LC_THEME_DIR . '/inc/lc-theme.php';
 require_once LC_THEME_DIR . '/inc/lc-blocks.php';
 require_once LC_THEME_DIR . '/inc/lc-blog.php';

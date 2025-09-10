@@ -14530,6 +14530,26 @@ header .dropdown.current-menu-item > .nav-link {
   background-color: hsl(173, 95%, 39%);
 }
 
+.event {
+  text-decoration: none;
+}
+.event__image {
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 8px;
+}
+.event__date {
+  color: #808080;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+.event__summary {
+  color: #808080;
+}
+
 .big_cta__inner {
   border-radius: 2rem;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;

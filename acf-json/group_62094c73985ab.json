@@ -392,6 +392,27 @@
                     "parent_repeater": "field_620790870b942"
                 }
             ]
+        },
+        {
+            "key": "field_68c07f74ae781",
+            "label": "Events page intro",
+            "name": "events_page_intro",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 0,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         }
     ],
     "location": [
@@ -412,5 +433,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1757345749
+    "modified": 1757446015
 }
