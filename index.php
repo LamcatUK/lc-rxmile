@@ -80,35 +80,41 @@ get_header();
         // Output filter buttons.
 
         ?>
-        <div class="filters d-flex justify-content-around align-items-center gap-4 flex-wrap">
+        <div class="filters g-4">
             <?php
             // Category filter group.
             if ( ! empty( $all_cats ) ) {
-                echo '<div class="mb-4 filter-buttons" id="category-filter-group">';
-                echo '<div class="me-2 text-center">Category:</div>';
+                echo '<div class="row mb-2 filter-buttons" id="category-filter-group">';
+                echo '<div class="col-md-1"><span class="me-2 text-center">Category:</span></div>';
+                echo '<div class="col-md-9">';
                 echo '<button class="btn btn-sm btn-outline-primary me-2 filter-btn filter-btn-category active" data-filter="all">All</button>';
                 foreach ( $all_cats as $catg ) {
                     echo '<button class="btn btn-sm btn-outline-primary me-2 filter-btn filter-btn-category" data-filter="' . esc_attr( $catg ) . '">' . esc_html( $catg ) . '</button>';
                 }
                 echo '</div>';
+                echo '</div>';
             }
 
             // Year filter group.
             if ( ! empty( $all_years ) ) {
-                echo '<div class="mb-4 filter-buttons" id="year-filter-group">';
-                echo '<div class="me-2 text-center">Year:</div>';
+                echo '<div class="row mb-4 filter-buttons" id="year-filter-group">';
+                echo '<div class="col-md-1"><span class="me-2">Year:</span></div>';
+                echo '<div class="col-md-9">';
                 echo '<button class="btn btn-sm btn-outline-primary me-2 filter-btn filter-btn-year active" data-filter="all">All</button>';
                 foreach ( $all_years as $filter_year ) {
                     echo '<button class="btn btn-sm btn-outline-primary me-2 filter-btn filter-btn-year" data-filter="' . esc_attr( $filter_year ) . '">' . esc_html( $filter_year ) . '</button>';
                 }
+                echo '</div>';
                 echo '</div>';
             }
 
             // reset button.
             if ( ! empty( $all_cats ) || ! empty( $all_years ) ) {
                 ?>
-                <div class="filter-buttons">
-                    <button class="btn btn-sm btn-outline-secondary filter-btn filter-btn-reset" id="reset-filters">Reset Filters</button>
+                <div class="row mb-4">
+                    <div class="col-md-12">
+                        <button class="btn btn-sm btn-outline-secondary filter-btn filter-btn-reset" id="reset-filters">Reset Filters</button>
+                    </div>
                 </div>
                 <?php
             }
