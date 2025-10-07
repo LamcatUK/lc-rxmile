@@ -52,19 +52,18 @@ if ( $intro_text ) {
 			$partners->the_post();
 			$l = get_field( 'link', get_the_ID() );
 			?>
-				<div class="col-md-8 d-flex flex-column justify-content-between">
-					<h3><?= esc_html( get_the_title() ); ?></h3>
-					<div class="mb-3"><?= wp_kses_post( apply_filters( 'the_content', get_the_content() ) ); ?></div>
-					<a href="<?= esc_url( $l['url'] ); ?>" class="btn btn-primary align-self-center"><?= esc_html( get_the_title() ); ?> Integration</a>
-				</div>
-				<div class="col-md-4 d-flex justify-content-center align-items-center">
-					<?= get_the_post_thumbnail( get_the_ID(), 'medium' ); ?>
-				</div>
-				<?php
-			}
-			wp_reset_postdata();
-			?>
+			<div class="order-md-2 col-md-4 d-flex justify-content-center align-items-center">
+				<?= get_the_post_thumbnail( get_the_ID(), 'medium' ); ?>
 			</div>
+			<div class="order-md-1 col-md-8 d-flex flex-column justify-content-between">
+				<h3><?= esc_html( get_the_title() ); ?></h3>
+				<div class="mb-3"><?= wp_kses_post( apply_filters( 'the_content', get_the_content() ) ); ?></div>
+				<a href="<?= esc_url( $l['url'] ); ?>" class="btn btn-primary align-self-center"><?= esc_html( get_the_title() ); ?> Integration</a>
+			</div>
+				<?php
+		}
+		wp_reset_postdata();
+		?>
 		</div>
 	</div>
 </section>
