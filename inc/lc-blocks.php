@@ -13,6 +13,26 @@ defined('ABSPATH') || exit;
 function acf_blocks()
 {
     if (function_exists('acf_register_block') ) {
+
+        // INSERT NEW BLOCKS HERE.
+
+        acf_register_block_type(
+            array(
+                'name'            => 'lc_partners',
+                'title'           => __( 'LC Partners' ),
+                'category'        => 'layout',
+                'icon'            => 'cover-image',
+                'render_template' => 'blocks/lc-partners.php',
+                'mode'            => 'edit',
+                'supports'        => array(
+                    'mode'      => false,
+                    'anchor'    => true,
+                    'className' => true,
+                    'align'     => true,
+                ),
+            )
+        );
+
         acf_register_block(
             array(
             'name'                => 'lc_page_title',
