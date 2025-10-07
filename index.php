@@ -80,7 +80,7 @@ get_header();
         // Output filter buttons.
 
         ?>
-        <div class="filters g-4">
+        <div class="filters g-4 mb-5">
             <?php
             // Category filter group.
             if ( ! empty( $all_cats ) ) {
@@ -111,7 +111,7 @@ get_header();
             // reset button.
             if ( ! empty( $all_cats ) || ! empty( $all_years ) ) {
                 ?>
-                <div class="row mb-4">
+                <div class="row">
                     <div class="col-md-12">
                         <button class="btn btn-sm btn-outline-secondary filter-btn filter-btn-reset" id="reset-filters">Reset Filters</button>
                     </div>

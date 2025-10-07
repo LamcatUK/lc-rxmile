@@ -15761,6 +15761,12 @@ input[type=number] {
   width: 256px !important;
 }
 
+.filters {
+  padding: 1rem 1rem 2rem 1rem;
+  border-radius: 1rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: hsl(222, 89%, 26%);
