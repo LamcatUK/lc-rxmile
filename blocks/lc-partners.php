@@ -45,7 +45,7 @@ if ( $intro_text ) {
 <section class="lc-partners my-5">
 	<div class="container py-5">
 		<h2 class="mb-4"><?= esc_html( get_field( 'partner_block_title', 'option' ) ); ?></h2>
-		<div class="mb-4"><?= wp_kses_post( $intro_text ); ?></div>
+		<div class="mb-5"><?= wp_kses_post( $intro_text ); ?></div>
 		<?php
 		while ( $partners->have_posts() ) {
 			$partners->the_post();

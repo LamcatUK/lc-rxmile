@@ -14991,6 +14991,12 @@ header .dropdown.current-menu-item > .nav-link {
   margin-left: 0.5rem;
 }
 
+.lc-partners .row {
+  padding: 1rem 1rem 2rem 1rem;
+  border-radius: 1rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
 /* Slider */
 .slick-slider {
   position: relative;
