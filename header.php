@@ -156,14 +156,14 @@ defined( 'ABSPATH' ) || exit;
                         if ( get_field( 'header_button', 'options' ) ) {
                             $l = get_field( 'header_button', 'options' );
                             ?>
-                        <span type="button" class="e-2" data-bs-toggle="modal"
+                        <span type="button" class="btn-navbar--outline" data-bs-toggle="modal"
                             data-bs-target="#choiceModal">
                             Book Demo
                         </span>
                             <?php
                         }
                         ?>
-                        <a href="https://tracker.rxmile.com/" class="">Login</a>
+                        <a href="https://tracker.rxmile.com/" class="btn-navbar">Login</a>
                     </div>
                     <!-- Navigation -->
                     <?php

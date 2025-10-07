@@ -14352,7 +14352,7 @@ h4, .h4, .latest__title,
 .btn-navbar {
   color: #fff;
   background-color: hsl(222, 89%, 26%);
-  padding: 0.5rem 2rem;
+  padding: 0.25rem 1.5rem;
   border-radius: 2rem;
   border: 1px solid hsl(222, 89%, 26%);
   text-decoration: none;
@@ -14366,7 +14366,7 @@ h4, .h4, .latest__title,
 .btn-navbar--outline {
   color: hsl(222, 89%, 26%);
   background-color: #fff;
-  padding: 0.5rem 2rem;
+  padding: 0.25rem 1.5rem;
   border-radius: 2rem;
   border: 1px solid hsl(222, 89%, 26%);
   text-decoration: none;

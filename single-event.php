@@ -82,8 +82,8 @@ foreach ($blocks as $block) {
                     foreach ($blocks as $block) {
                         if ($block['blockName'] == 'core/heading') {
                             if (!array_key_exists('level', $block['attrs'])) {
-                                $heading = strip_tags($block['innerHTML']);
-                                $id = acf_slugify($heading);
+                                $heading = strip_tags( $block['innerHTML'] );
+                                $id = acf_slugify( $heading );
                                 echo '<a id="' . $id . '" class="anchor">' . $block['innerHTML'] . '</a>';
                             }
                         }
