@@ -57,7 +57,7 @@ if ( $intro_text ) {
 					<div class="mb-3"><?= wp_kses_post( apply_filters( 'the_content', get_the_content() ) ); ?></div>
 					<a href="<?= esc_url( $l['url'] ); ?>" class="btn btn-primary align-self-center"><?= esc_html( get_the_title() ); ?> Integration</a>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 d-flex justify-content-center align-items-center">
 					<?= get_the_post_thumbnail( get_the_ID(), 'medium' ); ?>
 				</div>
 				<?php
