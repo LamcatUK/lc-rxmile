@@ -68,6 +68,9 @@ defined( 'ABSPATH' ) || exit;
         echo '<meta name="msvalidate.01" content="' . esc_attr( get_field( 'bing_site_verification', 'options' ) ) . '" />';
     }
     ?>
+	<!-- Start of HubSpot Embed Code -->
+	<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4968908.js"></script>
+	<!-- End of HubSpot Embed Code -->
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <!-- Meta Pixel Code -->
     <script>
