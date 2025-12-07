@@ -5,8 +5,6 @@
  * @package lc-rxmile
  */
 
-echo 'HS FORM';
-
 defined( 'ABSPATH' ) || exit;
 
 $bg      = get_field('background');
