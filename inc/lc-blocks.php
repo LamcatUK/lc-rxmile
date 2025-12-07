@@ -22,7 +22,7 @@ function acf_blocks()
                 'title'           => __( 'LC Hubspot' ),
                 'category'        => 'layout',
                 'icon'            => 'cover-image',
-                'render_template' => 'page-templates/blocks/lc-hubspot.php',
+                'render_template' => 'blocks/lc-hubspot.php',
                 'mode'            => 'edit',
                 'supports'        => array(
                     'mode'      => false,
