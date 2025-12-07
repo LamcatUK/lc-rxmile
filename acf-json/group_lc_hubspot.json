@@ -1,0 +1,98 @@
+{
+  "key": "group_lc_hubspot",
+  "title": "LC Hubspot",
+  "fields": [
+    {
+      "key": "field_lc_hubspot_title",
+      "label": "LC Hubspot",
+      "name": "title",
+      "type": "message"
+    },
+    {
+        "key": "field_6213efde98444",
+        "label": "Background Color",
+        "name": "background",
+        "aria-label": "",
+        "type": "radio",
+        "instructions": "",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+            "width": "35",
+            "class": "",
+            "id": ""
+        },
+        "choices": {
+            "white": "White",
+            "blue-100": "Blue",
+            "pink-100": "Pink",
+            "green-100": "Green",
+            "yellow-100": "Yellow"
+        },
+        "allow_null": 0,
+        "other_choice": 0,
+        "default_value": "white : White",
+        "layout": "horizontal",
+        "return_format": "value",
+        "save_other_choice": 0
+    },
+    {
+        "key": "field_62168521a9555",
+        "label": "Background Image",
+        "name": "background_image",
+        "aria-label": "",
+        "type": "radio",
+        "instructions": "",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+            "width": "35",
+            "class": "",
+            "id": ""
+        },
+        "choices": {
+            "none": "None",
+            "blue": "Blue",
+            "pink": "Pink",
+            "green": "Green",
+            "yellow": "Yellow"
+        },
+        "allow_null": 0,
+        "other_choice": 0,
+        "default_value": "none : None",
+        "layout": "horizontal",
+        "return_format": "value",
+        "save_other_choice": 0
+    },
+    {
+        "key": "field_6213efc642666",
+        "label": "Form ID",
+        "name": "form_id",
+        "aria-label": "",
+        "type": "text",
+        "instructions": "",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+        },
+        "default_value": "",
+        "placeholder": "",
+        "prepend": "",
+        "append": ""
+    }        
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf/lc-hubspot"
+      }
+    ]
+  ],
+  "active": 1,
+  "description": ""
+}

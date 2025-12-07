@@ -18,6 +18,23 @@ function acf_blocks()
 
         acf_register_block_type(
             array(
+                'name'            => 'lc_hubspot',
+                'title'           => __( 'LC Hubspot' ),
+                'category'        => 'layout',
+                'icon'            => 'cover-image',
+                'render_template' => 'page-templates/blocks/lc-hubspot.php',
+                'mode'            => 'edit',
+                'supports'        => array(
+                    'mode'      => false,
+                    'anchor'    => true,
+                    'className' => true,
+                    'align'     => true,
+                ),
+            )
+        );
+
+        acf_register_block_type(
+            array(
                 'name'            => 'lc_partners',
                 'title'           => __( 'LC Partners' ),
                 'category'        => 'layout',
