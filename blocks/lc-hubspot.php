@@ -5,13 +5,15 @@
  * @package lc-rxmile
  */
 
+echo 'HS FORM';
+
 defined( 'ABSPATH' ) || exit;
 
 $bg      = get_field('background');
 $form_id = get_field('form_id');
 $img     = get_field( 'background_image' );
 if ( 'none' !== $img ) {
-    $ibg = 'style="background-image:url(' . get_stylesheet_directory_uri() . '/img/hero--' . get_field( 'background_image' ) . '.svg)"';
+	$ibg = 'style="background-image:url(' . get_stylesheet_directory_uri() . '/img/hero--' . get_field( 'background_image' ) . '.svg)"';
 }
 ?>
 <!-- form_block -->
