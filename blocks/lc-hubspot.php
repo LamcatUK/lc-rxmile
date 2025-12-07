@@ -15,7 +15,7 @@ if ( 'none' !== $img ) {
 }
 ?>
 <!-- form_block -->
-<section class="form_block bg--<?= esc_attr( $bg ); ?>" <?= esc_html( $ibg ); ?>>
+<section class="form_block bg--<?= esc_attr( $bg ); ?>" <?= $ibg; ?>>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 offset-md-2">
