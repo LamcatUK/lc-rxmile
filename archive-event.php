@@ -79,7 +79,7 @@ add_action(
 					}
 					if ( ! get_post_field( 'post_content', $event['ID'] ) ) {
 						?>
-		<div class="event mb-5 row">
+		<div class="event mb-4 row">
 						<?php
 					} else {
 						?>
@@ -103,7 +103,7 @@ add_action(
 						$cols = 'col-md-12';
 					}
 					?>
-			<div class="<?= esc_attr( $cols ); ?> mb-5">
+			<div class="<?= esc_attr( $cols ); ?> mb-4" style="border-bottom: 1px solid #ccc;">
 				<h3 class="event__name"><?= esc_html( $event['title'] ); ?></h3>
 				<div class="event__date">
 					<?php
