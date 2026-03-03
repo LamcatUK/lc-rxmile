@@ -71,7 +71,7 @@ add_action(
                 echo '<div class="alert alert-info">No upcoming events found.</div>';
             } else {
                 foreach ( $events as $event ) {
-					if ( ! get_the_content() ) {
+					if ( ! get_post_field( 'post_content', $event['ID'] ) ) {
 						?>
 		<div class="event mb-5 row">
 						<?php
@@ -82,20 +82,22 @@ add_action(
 					}
 
 					$img = get_the_post_thumbnail_url( $event['ID'], 'medium' );
+					$cols = 'col-md-9';
 					if ( $img ) {
-					?>
+						?>
             <div class="col-md-3">
                 <img src="<?= esc_url( get_the_post_thumbnail_url( $event['ID'], 'medium' ) ); ?>" alt="<?= esc_attr( $event['title'] ); ?>" class="event__image" />
             </div>
-					<?php
+						<?php
 					} else {
 						?>
 			<div class="col-md-3">
 			</div>
 						<?php
+						$cols = 'col-md-12';
 					}
 					?>
-            <div class="col-md-9 mb-5">
+            <div class="<?= esc_attr( $cols ); ?> mb-5">
                 <h2 class="event__name"><?= esc_html( $event['title'] ); ?></h2>
                 <div class="event__date">
                     <?php
@@ -116,7 +118,7 @@ add_action(
                 </div>
             </div>
 					<?php
-					if ( ! get_the_content() ) {
+					if ( ! get_post_field( 'post_content', $event['ID'] ) ) {
 						?>
 		</div>
 						<?php
