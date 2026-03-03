@@ -83,7 +83,7 @@ add_action(
 						<?php
 					} else {
 						?>
-		<a href="<?= esc_url( get_permalink( $event['ID'] ) ); ?>" class="event mb-5 row">
+		<a href="<?= esc_url( get_permalink( $event['ID'] ) ); ?>" class="event mb-4 row">
 						<?php
 					}
 
