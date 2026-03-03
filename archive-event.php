@@ -74,7 +74,7 @@ add_action(
 				foreach ( $events as $event ) {
 					$event_month = ! empty( $event['start_date'] ) ? gmdate( 'F Y', strtotime( $event['start_date'] ) ) : '';
 					if ( $event_month && $event_month !== $current_month ) {
-						echo '<h2 class="events__month-heading">' . esc_html( $event_month ) . '</h2>';
+						echo '<h2 class="events__month-heading mb-4">' . esc_html( $event_month ) . '</h2>';
 						$current_month = $event_month;
 					}
 					if ( ! get_post_field( 'post_content', $event['ID'] ) ) {
@@ -103,7 +103,7 @@ add_action(
 						$cols = 'col-md-12';
 					}
 					?>
-			<div class="<?= esc_attr( $cols ); ?> mb-4" style="border-bottom: 1px solid #ccc;">
+			<div class="<?= esc_attr( $cols ); ?> pb-4" style="border-bottom: 1px solid #ccc;">
 				<h3 class="event__name"><?= esc_html( $event['title'] ); ?></h3>
 				<div class="event__date">
 					<?php
