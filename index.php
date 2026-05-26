@@ -42,14 +42,14 @@ get_header();
             ob_start();
             $img = get_the_post_thumbnail_url( get_the_ID(), 'large' );
             if ( ! $img ) {
-                $img = catch_that_image( $post );
+                $img = catch_that_image( get_the_ID() );
             }
+            $image_style = $img ? sprintf( ' style="%s"', esc_attr( 'background-image:url("' . esc_url_raw( $img ) . '")' ) ) : '';
             ?>
             <div class="col-md-6 col-lg-4 mb-4">
                 <div class="insight" data-category="<?= esc_attr( $category ); ?>" data-year="<?= esc_attr( $post_year ); ?>">
                     <a href="<?= esc_url( get_the_permalink() ); ?>">
-                        <div class="insight__image"
-                            style="background-image:url('<?= esc_url( $img ); ?>')">
+                        <div class="insight__image"<?= $image_style; ?>>
                         </div>
                         <div class="insight__meta">
                             <div>
