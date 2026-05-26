@@ -234,7 +234,7 @@ function related_posts_by_cat( $cat_id ) {
                 <div class="col-md-4 mb-4 mb-lg-0">
                     <div class="recent">
                         <a href="<?= get_the_permalink(); ?>">
-                            <div class="recent__image" style="background-image:url('<?= get_the_post_thumbnail_url( get_the_ID(), 'medium' ); ?>)'"></div>
+                            <div class="recent__image" style="background-image:url('<?= get_the_post_thumbnail_url( get_the_ID(), 'medium' ); ?>')"></div>
                             <div class="recent__card">
                                 <div class="recent__title"><?= get_the_title(); ?></div>
                                 <div class="recent__meta"><?= get_the_date( 'jS F, Y' ); ?></div>
@@ -276,7 +276,7 @@ function latest_posts() {
             ?>
             <div class="recent">
                 <a href="<?= get_the_permalink( get_the_ID() ); ?>">
-                    <div class="recent__image" style="background-image:url('<?= get_the_post_thumbnail_url( get_the_ID(), 'medium' ); ?>)'"></div>
+                    <div class="recent__image" style="background-image:url('<?= get_the_post_thumbnail_url( get_the_ID(), 'medium' ); ?>')"></div>
                     <div class="recent__card">
                         <div class="recent__title"><?= get_the_title(); ?></div>
                         <div class="recent__meta"><?= get_the_date( 'jS F, Y' ); ?></div>
