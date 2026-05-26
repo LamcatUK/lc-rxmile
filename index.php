@@ -44,12 +44,14 @@ get_header();
             if ( ! $img ) {
                 $img = catch_that_image( get_the_ID() );
             }
-            $image_style = $img ? sprintf( ' style="%s"', esc_attr( 'background-image:url("' . esc_url_raw( $img ) . '")' ) ) : '';
             ?>
             <div class="col-md-6 col-lg-4 mb-4">
                 <div class="insight" data-category="<?= esc_attr( $category ); ?>" data-year="<?= esc_attr( $post_year ); ?>">
                     <a href="<?= esc_url( get_the_permalink() ); ?>">
-                        <div class="insight__image"<?= $image_style; ?>>
+                        <div class="insight__image">
+                            <?php if ( $img ) : ?>
+                                <img src="<?= esc_url( $img ); ?>" alt="<?= esc_attr( get_the_title() ); ?>">
+                            <?php endif; ?>
                         </div>
                         <div class="insight__meta">
                             <div>
