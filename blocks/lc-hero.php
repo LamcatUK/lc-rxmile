@@ -81,9 +81,13 @@ if ( get_field( 'use_featured_image' ) ?? null && 'Yes' === get_field( 'use_feat
                 <div class="d-inline-block hippa-badge <?= esc_attr( $hippa_class ); ?>"
                     style="background-image:url(<?= esc_url( get_stylesheet_directory_uri() ); ?>/img/hippa-compliant.png)">
                 </div>
+                <?php
+                /*
                 <div class="d-inline-block hippa-badge <?= esc_attr( $hippa_class ); ?>"
                     style="background-image:url(<?= esc_url( get_stylesheet_directory_uri() ); ?>/img/ncpa-logo.png)">
                 </div>
+                */
+                ?>
             </div>
                 <?php
             }
