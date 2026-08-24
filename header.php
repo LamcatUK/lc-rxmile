@@ -101,38 +101,70 @@ defined( 'ABSPATH' ) || exit;
 	<?php wp_head(); ?>
 
 	<script type="application/ld+json">
-		{
-			"@context": "https://schema.org",
+	{
+		"@context": "https://schema.org",
+		"@graph": [
+			{
 			"@type": "Organization",
+			"@id": "https://www.rxmile.com/#organization",
 			"name": "RxMile",
-			"legalName": "Zek Tech LLC",
+			"alternateName": "RxMile by RedSail Technologies",
 			"url": "https://www.rxmile.com/",
-			"logo": "https://www.rxmile.com/wp-content/uploads/2022/03/RxMile-Logo.png",
+			"description": "RxMile is a pharmacy delivery software platform for independent pharmacies, providing HIPAA-compliant prescription delivery workflows, automated route optimization, real-time driver tracking, and photo proof of delivery. RxMile integrates with pharmacy management systems including PioneerRx, Liberty Software, and Outcomes Rx30, and with Uber for on-demand delivery. RxMile is a RedSail Technologies company.",
+			"logo": {
+				"@type": "ImageObject",
+				"@id": "https://www.rxmile.com/#logo",
+				"url": "https://www.rxmile.com/wp-content/uploads/2023/05/TM_rxmile-logo.png",
+				"contentUrl": "https://www.rxmile.com/wp-content/uploads/2023/05/TM_rxmile-logo.png",
+				"width": 936,
+				"height": 253,
+				"caption": "RxMile"
+			},
+			"image": { "@id": "https://www.rxmile.com/#logo" },
 			"foundingDate": "2022",
-			"founders": [{
+			"founder": [
+				{
 				"@type": "Person",
-				"name": "Kunal Vyas"
-			}],
-			"address": {
-				"@type": "PostalAddress",
-				"streetAddress": "320 W Sabal Palm Ste 300",
-				"addressLocality": "Longwood",
-				"addressRegion": "Orlando, Florida",
-				"postalCode": "32803",
-				"addressCountry": "USA"
+				"name": "Kunal Vyas",
+				"jobTitle": "Co-Founder and Chief Executive Officer"
+				},
+				{
+				"@type": "Person",
+				"name": "Ziad Elmalki",
+				"jobTitle": "Co-Founder"
+				}
+			],
+			"parentOrganization": { "@id": "https://www.redsailtechnologies.com/#organization" },
+			"areaServed": {
+				"@type": "Country",
+				"name": "United States"
 			},
-			"contactPoint": {
-				"@type": "ContactPoint",
-				"contactType": "customer support",
-				"telephone": "[270 4796 453]",
-				"email": "inquiries@rxmile.com"
-			},
+			"knowsAbout": [
+				"Pharmacy delivery software",
+				"Prescription home delivery",
+				"HIPAA-compliant delivery workflows",
+				"Delivery route optimization",
+				"Independent pharmacy operations"
+			],
 			"sameAs": [
 				"https://www.facebook.com/RxMileSaaS",
 				"https://www.linkedin.com/company/rxmile/",
-				"https://www.youtube.com/@rxmile2497"
+				"https://www.youtube.com/@rxmile2497",
+				"https://www.redsailtechnologies.com/rxmile"
 			]
-		}
+			},
+			{
+			"@type": "Organization",
+			"@id": "https://www.redsailtechnologies.com/#organization",
+			"name": "RedSail Technologies",
+			"url": "https://www.redsailtechnologies.com/",
+			"sameAs": [
+				"https://www.linkedin.com/company/redsail-technologies/"
+			],
+			"subOrganization": { "@id": "https://www.rxmile.com/#organization" }
+			}
+		]
+	}
 	</script>
 
 </head>
